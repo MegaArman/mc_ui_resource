@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <script src="UIEngine.js"></script>
+        <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  	<div class="body1">
+    <div class="minecraft-container" style="width:50%;margin-top:30vh;">
+    	<div style="text-align:center;">Weather settings</div>
+    	        <div id="close" class="close-button">x</div>
+      <div class="minecraft-container-dark">
+      <div id="clear" class="button">Clear</div>
+            <div id="rain" class="button">Rain</div>
+             <div id="thunder" class="button">Thunder storm</div>
+             <div id="back" class="button">Back to main menu</div>
+      </div>
+    </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    let scriptEngineHandle = null;
+engine.on("facet:updated:core.scripting", function (scriptEngine) {
+		scriptEngineHandle = scriptEngine;
+    });
+    engine.trigger("facet:request", ["core.scripting"]);
+    let clear = document.getElementById("clear");
+    clear.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("clearpressed");
+    });
+    let rain = document.getElementById("rain");
+    rain.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("rainpressed");
+    });
+    let thunder = document.getElementById("thunder");
+    thunder.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("thunderpressed");
+    });
+    let close = document.getElementById("close");
+    close.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("closepressed");
+    });
+    let back = document.getElementById("back");
+    back.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("backpressed");
+    });
+</script>
+</html>

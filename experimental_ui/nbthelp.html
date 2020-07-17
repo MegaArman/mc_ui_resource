@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <script src="UIEngine.js"></script>
+            <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  	<div class="body1">
+    <div class="minecraft-container" style="width:70vw;">
+    	<div style="align-items:center;color:red;">created by Drag0nD</div>
+      <div class="minecraft-container-dark"style="line-height:30px;font-size:14px;">
+      	<div style="color:orange">You can spawn "entity" or "item"</div>
+          <div style="color:orange">For entities you can give them any health/position/name while spawning them just like nbt commands</div>
+          <div>The command must start with entity/item then identifier of entity starting with "minecraft:" example:<div style="color:orange">entity minecraft:zombie name:test health:1000 position:40,64,40</div> </div>
+           <div><div style="color:orange">you cant use spaces in name at the moment</div></div>
+          <div><div style="color:orange">in position put commas(,)between x,y,z</div> </div>
+          <div>you dont have to give spawned entities all information you can just give it health only and it will spawn at your location by default (sometimes it doesnt so i prefer using position) example:<div style="color:orange">entity minecraft:cow health:50</div></div>
+           <div>example on items:<div style="color:orange">item minecraft:iron_sword</div></div>
+          <div style="color:orange">item minecraft:dirt</div>
+          <div style="color:red">if you have any ideas comment them on mcpedl post</div>
+                        <div id="back" class="button">back</div>
+      </div>
+    </div>
+    </div>
+</body>
+<script type="text/javascript">
+let scriptEngineHandle = null;
+engine.on("facet:updated:core.scripting", function (scriptEngine) {
+		scriptEngineHandle = scriptEngine;
+    });
+    engine.trigger("facet:request", ["core.scripting"]);
+          let back = document.getElementById("back");
+    back.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("backhelppressed");
+    });
+</script>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <script src="UIEngine.js"></script>
+            <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  	<div class="body1">
+    <div class="minecraft-container" style="width:1140px;">
+    	<div style="align-items:center;color:red;">created by Drag0nD</div>
+    <div id="close" class="close-button">x</div>
+      <div class="minecraft-container-dark"style="line-height:30px;font-size:17px;">
+      <div id="player0" class="button" style="color:black;" onclick="player0()">empty</div>
+      <div id="player1" class="button" style="color:black;" onclick="player1()">empty</div>
+      <div id="player2" class="button" style="color:black;" onclick="player2()">empty</div>
+      <div id="player3" class="button" style="color:black;" onclick="player3()">empty</div>
+      <div id="player4" class="button" style="color:black;" onclick="player4()">empty</div>
+      <div id="player5" class="button" style="color:black;" onclick="player5()">empty</div>
+      <div id="player6" class="button" style="color:black;" onclick="player6()">empty</div>
+      <div id="player7" class="button" style="color:black;" onclick="player7()">empty</div>
+      <div id="player8" class="button" style="color:black;" onclick="player8()">empty</div>
+      <div id="player9" class="button" style="color:black;" onclick="player9()">empty</div>
+      <div id="player10" class="button" style="color:black;" onclick="player10()">empty</div>
+      </div>
+    </div>
+    </div>
+</body>
+<script type="text/javascript">
+let scriptEngineHandle = null;
+engine.on("facet:updated:core.scripting", function (scriptEngine) {
+		scriptEngineHandle = scriptEngine;
+    });
+    engine.trigger("facet:request", ["core.scripting"]);
+          
+    
+    engine.on("showplayers", function (names) {
+    	playersnames = JSON.parse(names)
+    	document.getElementById("player0").innerHTML= playersnames[0]
+        document.getElementById("player1").innerHTML= playersnames[1]
+        document.getElementById("player2").innerHTML= playersnames[2]
+        document.getElementById("player3").innerHTML= playersnames[3]
+        document.getElementById("player4").innerHTML= playersnames[4]
+        document.getElementById("player5").innerHTML= playersnames[5]
+        document.getElementById("player6").innerHTML= playersnames[6]
+        document.getElementById("player7").innerHTML= playersnames[7]
+        document.getElementById("player8").innerHTML= playersnames[8]
+        document.getElementById("player9").innerHTML= playersnames[9]
+        document.getElementById("player10").innerHTML= playersnames[10]
+    	});
+    function player0() {
+    	let text = document.getElementById("player0").textContent
+    	if (text !== "undefined") {
+    	document.getElementById("player0").style.color = "green";
+    	 let event = {
+    	eventName: "AdminPanel:givepermission",
+        data: text
+        }
+       let eventData = JSON.stringify(event);
+        scriptEngineHandle.triggerEvent(eventData);
+    	}
+      }
+      function player1() {
+       let text = document.getElementById("player1").textContent
+    	if (text !== "undefined") {
+    	document.getElementById("player1").style.color = "green";
+    	 let event = {
+    	eventName: "AdminPanel:givepermission",
+        data: text
+        }
+       let eventData = JSON.stringify(event);
+        scriptEngineHandle.triggerEvent(eventData);
+    	}
+       }
+       function player2() {
+    let text = document.getElementById("player2").textContent
+    	if (text !== "undefined") {
+    	document.getElementById("player2").style.color = "green";
+    	 let event = {
+    	eventName: "AdminPanel:givepermission",
+        data: text
+        }
+       let eventData = JSON.stringify(event);
+        scriptEngineHandle.triggerEvent(eventData);
+    	}
+       }
+       function player3() {
+       let text = document.getElementById("player3").textContent
+    	if (text !== "undefined") {
+    	document.getElementById("player3").style.color = "green";
+    	 let event = {
+    	eventName: "AdminPanel:givepermission",
+        data: text
+        }
+       let eventData = JSON.stringify(event);
+        scriptEngineHandle.triggerEvent(eventData);
+    	}
+       }
+       function player4() {
+       let text = document.getElementById("player4").textContent
+    	if (text !== "undefined") {
+    	document.getElementById("player4").style.color = "green";
+    	 let event = {
+    	eventName: "AdminPanel:givepermission",
+        data: text
+        }
+       let eventData = JSON.stringify(event);
+        scriptEngineHandle.triggerEvent(eventData);
+    	}
+       }
+       function player5() {
+       let text = document.getElementById("player5").textContent
+    	if (text !== "undefined") {
+    	document.getElementById("player5").style.color = "green";
+    	 let event = {
+    	eventName: "AdminPanel:givepermission",
+        data: text
+        }
+       let eventData = JSON.stringify(event);
+        scriptEngineHandle.triggerEvent(eventData);
+    	}
+       }
+       function player6() {
+       let text = document.getElementById("player6").textContent
+    	if (text !== "undefined") {
+    	document.getElementById("player6").style.color = "green";
+    	 let event = {
+    	eventName: "AdminPanel:givepermission",
+        data: text
+        }
+       let eventData = JSON.stringify(event);
+        scriptEngineHandle.triggerEvent(eventData);
+    	}
+       }
+       function player7() {
+       let text = document.getElementById("player7").textContent
+    	if (text !== "undefined") {
+    	document.getElementById("player7").style.color = "green";
+    	 let event = {
+    	eventName: "AdminPanel:givepermission",
+        data: text
+        }
+       let eventData = JSON.stringify(event);
+        scriptEngineHandle.triggerEvent(eventData);
+    	}
+       }
+       function player8() {
+       let text = document.getElementById("player8").textContent
+    	if (text !== "undefined") {
+    	document.getElementById("player8").style.color = "green";
+    	 let event = {
+    	eventName: "AdminPanel:givepermission",
+        data: text
+        }
+       let eventData = JSON.stringify(event);
+        scriptEngineHandle.triggerEvent(eventData);
+    	}
+       }
+       function player9() {
+       let text = document.getElementById("player9").textContent
+    	if (text !== "undefined") {
+    	document.getElementById("player9").style.color = "green";
+    	 let event = {
+    	eventName: "AdminPanel:givepermission",
+        data: text
+        }
+       let eventData = JSON.stringify(event);
+        scriptEngineHandle.triggerEvent(eventData);
+    	}
+       }
+       function player10() {
+       let text = document.getElementById("player10").textContent
+    	if (text !== "undefined") {
+    	document.getElementById("player10").style.color = "green";
+    	 let event = {
+    	eventName: "AdminPanel:givepermission",
+        data: text
+        }
+       let eventData = JSON.stringify(event);
+        scriptEngineHandle.triggerEvent(eventData);
+    	}
+       }
+       let back = document.getElementById("close");
+    back.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("closeadminsmenu");});
+</script>
+</html>
