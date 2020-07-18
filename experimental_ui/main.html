@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <script src="UIEngine.js"></script>
+            <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  	<div class="body1">
+        <div class="minecraft-container" style="width:900px;margin-top:30vh;">
+    	<div style="text-align:center;">Admin panel</div>
+    	<div id="close" class="close-button">x</div>
+        <div class="minecraft-container-dark">
+         <div id="time" class="button"style="line-height:150%;">time</div>
+
+        <div id="weather" class="button"style="line-height:150%;">weather</div>
+        <div id="menu" class="button"style="line-height:150%;">admins menu</div>
+        <div id="command" class="button"style="line-height:150%;">Write a command</div>
+        <div id="nbt" class="button"style="line-height:150%;">NBT commands</div>
+<!--
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div> -->
+    </div>
+    </div>
+    </div>
+</body>
+<script type="text/javascript">
+   let scriptEngineHandle = null;
+engine.on("facet:updated:core.scripting", function (scriptEngine) {
+		scriptEngineHandle = scriptEngine;
+    });
+    engine.trigger("facet:request", ["core.scripting"]);
+    let time = document.getElementById("time");
+    time.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("timepressed");
+    });
+    let weather = document.getElementById("weather");
+    weather.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("weatherpressed");
+    });
+        let close = document.getElementById("close");
+    close.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("closepressed");
+    });
+          let command = document.getElementById("command");
+    command.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("commandpressed");});
+        let adminmenu = document.getElementById("menu");
+    adminmenu.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("adminsmenu");
+    });
+        let nbt = document.getElementById("nbt");
+    nbt.addEventListener("click", function () {
+        scriptEngineHandle.triggerEvent("nbtcommands");
+    });
+</script>
+</html>
