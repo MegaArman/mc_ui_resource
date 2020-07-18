@@ -2,16 +2,16 @@
    "format_version" : 1,
    "header" : {
       "description" : "a simple boilerplate ui",
-      "name" : "a simple boilerplate ui",
+      "name" : "boilerplate ui",
       "platform_locked" : false,
-      "uuid" : "5bafcda9-4b25-416d-81b7-af1b041b3034",
+      "uuid" : "3ea9c0b0-23b8-43a7-b269-e21e6f88bf18",
       "version" : [ 4, 0, 0 ]
    },
    "modules" : [
       {
          "description" : "a simple boilerplate ui",
          "type" : "resources",
-         "uuid" : "ad616793-bbc4-467d-bb60-d0890a844106",
+         "uuid" : "033b5297-c5c5-47db-907c-cf766b02d681",
          "version" : [ 4, 0, 0 ]
       }
    ],
