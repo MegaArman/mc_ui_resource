@@ -1,9 +1,9 @@
 {
-  "resource_pack_name": "admin",
+  "resource_pack_name": "boilerplate",
   "texture_name": "atlas.items",
   "texture_data": {
-    "admin": {
-      "textures": "textures/items/admin.png"
+    "ui_item": {
+      "textures": "textures/items/ui_item.png"
     }
   }
 }

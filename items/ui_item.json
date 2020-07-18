@@ -2,12 +2,12 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "AdminPanel:AdminPanel",
+      "identifier": "boilerplate:ui_item",
       "category": "Equipment"
     },
 
     "components": {
-      "minecraft:icon": "admin",
+      "minecraft:icon": "ui_item",
       "minecraft:render_offsets": "tools"
     }
   }
