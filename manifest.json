@@ -1,15 +1,15 @@
 {
    "format_version" : 1,
    "header" : {
-      "description" : "support 1.13 wooh",
-      "name" : "Admin Panel V4",
+      "description" : "a simple boilerplate ui",
+      "name" : "a simple boilerplate ui",
       "platform_locked" : false,
       "uuid" : "5bafcda9-4b25-416d-81b7-af1b041b3034",
       "version" : [ 4, 0, 0 ]
    },
    "modules" : [
       {
-         "description" : "Admin Panel by Drag0nD3",
+         "description" : "a simple boilerplate ui",
          "type" : "resources",
          "uuid" : "ad616793-bbc4-467d-bb60-d0890a844106",
          "version" : [ 4, 0, 0 ]
