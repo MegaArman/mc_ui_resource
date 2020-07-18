@@ -2,7 +2,7 @@
    "format_version" : 1,
    "header" : {
       "description" : "a simple boilerplate ui",
-      "name" : "boilerplate ui",
+      "name" : "boilerplate",
       "platform_locked" : false,
       "uuid" : "3ea9c0b0-23b8-43a7-b269-e21e6f88bf18",
       "version" : [ 4, 0, 0 ]
